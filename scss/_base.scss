@@ -1,0 +1,28 @@
+button, .btn{
+  font-weight: 700;
+  padding: 10px;
+  text-align: center;
+  min-width: 160px;
+  margin: 0 auto;
+  border: solid 2px;
+  &.btn-dark{
+    color: $white;
+    background-color: $black;
+    border-color: $black;
+    &:hover{
+      color: $black;
+      background-color: $white;
+      border-color: $black;
+    }
+  }
+  &.btn-light{
+    color: $black;
+    background-color: $white;
+    border-color: $white;
+    &:hover{
+      color: $white;
+      background-color: transparent;
+      border-color: $white;
+    }
+  }
+}
