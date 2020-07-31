@@ -1,0 +1,249 @@
+/*********************************************************************
+    MARRKETING BANNER
+*********************************************************************/
+@import url(fonts.css);
+#mkt-banner {
+  margin-top: -21px;
+  position: relative;
+  background-color: transparent;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden; }
+
+.mktb-standard .mktb-mobile-bk {
+  display: block;
+  width: 100%;
+  height: 400px;
+  position: relative;
+  background-color: transparent;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.mktb-standard.mktb-default .mktb-mobile-bk {
+  height: 250px; }
+
+.mktb-standard .mktb-bk {
+  display: none; }
+
+.mktb-standard .container {
+  position: relative;
+  height: auto;
+  margin-top: -400px; }
+
+.mktb-standard.mktb-default .container {
+  margin-top: 0; }
+
+#mkt-banner .logo-abs-cont {
+  background: #fff;
+  padding: 15px; }
+
+#mkt-banner.mktb-standard .logo-abs-cont {
+  bottom: auto;
+  top: 250px;
+  left: 15px; }
+
+#mkt-banner.mktb-standard.mktb-default .logo-abs-cont {
+  top: 0;
+  left: 0; }
+
+#mkt-banner .logo-abs-cont {
+  padding: 15px;
+  position: absolute;
+  bottom: 0;
+  left: 0; }
+
+#mkt-banner.mktb-standard.mktb-default .logo-abs-cont {
+  position: relative;
+  text-align: center; }
+
+#mkt-banner .logo-abs-cont img {
+  height: 50px;
+  width: auto; }
+
+.mktb-standard .mktbs-call-out {
+  background-color: #fff;
+  margin: 250px 15px 0;
+  padding: 32px 15px 30px;
+  /*        border-bottom-width: 5px;
+        border-bottom-style: solid;
+        border-bottom-color:#5f7800;*/
+  -webkit-box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25); }
+
+.mktb-standard .bar-btm {
+  width: 100%;
+  height: 3px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  margin-left: -20px; }
+
+.mktb-standard .mktbs-call-out .mktbs-title {
+  color: black;
+  font-size: 26px;
+  line-height: 31px;
+  font-weight: bold;
+  margin: 45px 0 20px;
+  display: block; }
+
+.mktbs-title h1 {
+  font-size: inherit;
+  color: inherit;
+  margin: inherit;
+  line-height: inherit; }
+
+.mktb-standard .mktbs-call-out p {
+  color: #000;
+  margin: 0;
+  font-size: 16px;
+  line-height: 23px; }
+
+a.btn-pp {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 7px 18px;
+  border-width: 2px;
+  border-style: solid;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s; }
+
+a.btn-pp:hover {
+  background-color: #fff; }
+
+.dark-text a.btn-pp {
+  color: #000; }
+
+#mkt-banner-lines {
+  margin-top: -21px; }
+
+.mktb-lines .top-line {
+  height: 10px;
+  width: 100%;
+  display: block; }
+
+.mktb-lines .btm-line {
+  height: 8px;
+  width: 100%;
+  display: block; }
+
+.mktb-lines .img-ves img {
+  display: block;
+  padding: 13px 0 7px;
+  margin: 0 auto;
+  height: 75px; }
+
+@media only screen and (min-width: 768px) {
+  .mktb-standard.mktb-default .container {
+    margin-top: -50px;
+    padding-bottom: 0; }
+  .mktb-standard .mktb-mobile-bk {
+    display: none; }
+  .mktb-standard .mktb-bk {
+    display: block;
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  #mkt-banner .logo-abs-cont {
+    bottom: initial;
+    top: 250px;
+    left: 15px; }
+  #mkt-banner.mktb-standard.mktb-default .logo-abs-cont {
+    left: auto; }
+  .mktb-standard.mktb-animation .mktb-bk {
+    height: 500px; }
+  .mktb-standard.mktb-default .mktb-bk {
+    height: 250px; }
+  .mktb-standard .container {
+    position: relative;
+    height: 400px;
+    margin-top: 0;
+    padding-bottom: 0;
+    overflow: hidden; }
+  .mktb-standard.mktb-animation .container {
+    height: 500px; }
+  .mktb-standard.mktb-default .container {
+    height: 250px;
+    margin-top: 0; }
+  .mktb-standard .mktbs-call-out {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 55%;
+    margin: 0 0 0 15px;
+    position: absolute;
+    padding: 20px;
+    top: 50%;
+    transform: translateY(-50%); }
+  #mkt-banner.mktb-standard.mktb-default .logo-abs-cont {
+    position: absolute;
+    text-align: left; }
+  #mkt-banner .logo-abs-cont {
+    background: #fff;
+    padding: 15px 25px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    left: auto;
+    -webkit-box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25); }
+  #mkt-banner.mktb-standard .logo-abs-cont {
+    bottom: auto;
+    top: 0;
+    left: auto; }
+  #mkt-banner .logo-abs-cont img {
+    height: 50px;
+    max-height: none;
+    width: auto;
+    max-width: none; }
+  .mktb-standard .mktbs-call-out .mktbs-title {
+    margin: 0 0 20px; }
+  .mktb-lines .img-ves img {
+    float: right;
+    margin: 0 20px 0 0; } }
+
+@media only screen and (min-width: 992px) {
+  .mktb-standard .mktbs-call-out {
+    width: 45%; }
+  #mkt-banner {
+    margin-top: -14px; }
+  .mktb-standard .mktbs-call-out {
+    top: 47%;
+    transform: translateY(-50%); }
+  #mkt-banner.mktb-lines {
+    margin-bottom: 25px; }
+  .mktb-lines .top-line {
+    height: 6px; }
+  .mktb-lines .btm-line {
+    height: 8px; } }
+
+@media only screen and (min-width: 1200px) {
+  .mktb-standard .mktbs-call-out {
+    width: 40%; } }
+
+/* Specific */
+.page-section {
+  margin-top: 35px; }
+
+.page-section:first-of-type {
+  margin-top: 70px; }
+
+.sd-form-group {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px; }
