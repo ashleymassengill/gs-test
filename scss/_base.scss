@@ -1,3 +1,4 @@
+//button styling
 button, .btn{
   font-weight: 700;
   padding: 10px;
@@ -5,6 +6,7 @@ button, .btn{
   min-width: 160px;
   margin: 0 auto;
   border: solid 2px;
+  @include transition;
   &.btn-dark{
     color: $white;
     background-color: $black;
@@ -24,5 +26,46 @@ button, .btn{
       background-color: transparent;
       border-color: $white;
     }
+  }
+}
+
+//form styling
+form{
+  .form-item{
+    padding: 8px 0;
+    label{
+      display: block;
+    }
+    input, textarea{
+      width: 100%;
+    }
+  }
+  .form-row, fieldset{
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .form-item{
+      width: 48%;
+    }
+    @media (max-width: $screen-xs-max){
+      flex-direction: column;
+      .form-item{
+        width: 100%;
+      }
+    }
+  }
+  .checkbox{
+    padding: 8px 0;
+    display: flex;
+    flex-direction: row;
+    input{
+      margin: 6px 1rem 0 0;
+    }
+  }
+  button{
+    margin: 8px 0;
   }
 }
