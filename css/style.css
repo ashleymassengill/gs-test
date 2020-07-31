@@ -287,7 +287,8 @@ h6 {
 p {
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px; }
+  line-height: 24px;
+  margin-bottom: 0; }
 
 a {
   color: #000066;
@@ -326,7 +327,8 @@ form .form-item {
   form .form-item label {
     display: block; }
   form .form-item input, form .form-item textarea {
-    width: 100%; }
+    width: 100%;
+    border-width: 1px; }
 
 form .form-row, form fieldset {
   border: none;
@@ -353,6 +355,48 @@ form .checkbox {
 form button {
   margin: 8px 0; }
 
+.page-content {
+  padding-top: 140px; }
+
+.banner {
+  background-color: #d9d5d2;
+  background-image: url("../images/cactus.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  margin-bottom: 4rem; }
+  .banner .container {
+    min-height: 400px;
+    height: 100%;
+    position: relative; }
+  .banner .banner-logo {
+    background-color: #fff;
+    padding: 15px;
+    position: absolute;
+    right: 10px;
+    top: 0; }
+    .banner .banner-logo img {
+      max-width: 150px;
+      width: 100%;
+      height: auto; }
+  .banner .banner-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 40%;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-bottom: 5px solid #00558c;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25); }
+    .banner .banner-card h1 {
+      margin-top: 0;
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 1; }
+    .banner .banner-card h2 {
+      font-size: 26px;
+      line-height: 36px; }
+
 .body .container .row {
   margin-left: 0;
   margin-right: 0; }
@@ -367,6 +411,9 @@ form button {
     width: 100%; }
     .body-container > div:first-of-type {
       margin-right: 1.5%; }
+      .body-container > div:first-of-type h2 {
+        font-size: 26px;
+        line-height: 36px; }
     .body-container > div:last-of-type {
       margin-left: 1.5%;
       background-color: #d9d5d2; }
@@ -379,3 +426,7 @@ form button {
   @media (max-width: 767px) {
     .body-container > div {
       max-width: 100%; } }
+
+.form-container h2 {
+  font-size: 26px;
+  line-height: 36px; }
