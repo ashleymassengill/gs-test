@@ -1,2 +1,7 @@
 # gs-test
-G&amp;S Test Site
+G&S Test Site
+
+http://www.ashleymassengill.com/gs-test
+
+#to compile sass
+ npm run watch
