@@ -1,6 +1,10 @@
 .page-content{
   padding-top: 140px;
+  @media (max-width: $screen-sm-max){
+    padding-top: 0;
+  }
 }
+
 .banner{
   background-color: $shade-30;
   background-image: url('../images/cactus.jpg');
@@ -8,6 +12,9 @@
   background-position: center bottom;
   background-size: cover;
   margin-bottom: 4rem;
+  .mobile-bg{
+    display: none;
+  }
   .container{
     min-height: 400px;
     height: 100%;
@@ -20,6 +27,7 @@
     right: 10px;
     top: 0;
     img{
+      background-color: $shade-30;
       max-width: 150px;
       width: 100%;
       height: auto;
@@ -43,6 +51,55 @@
     h2{
       font-size: 26px;
       line-height: 36px;
+    }
+  }
+  @media (max-width: $screen-xs-max){
+    background-image: none;
+    background-color: $white;
+    margin-bottom: 2rem;
+    .mobile-bg{
+      display: block;
+      background-color: $shade-30;
+      height: 400px;
+      background-image: url('../images/cactus.jpg');
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      background-size: cover;
+      position: relative;
+      z-index: 0;
+    }
+    .container{
+      z-index: 5;
+      min-height: 385px;
+      margin-top: -50%;
+    }
+    .row{
+      background-color: $white;
+      border-bottom: 5px solid $blue-1;
+      box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.25);
+      padding: 15px 15px 0;
+      margin: 0;
+    }
+    .banner-logo{
+      position: initial;
+      padding: 0;
+      img{
+        max-width: 100px;
+      }
+    }
+    .banner-card{
+      padding: 20px 0;
+      position: initial;
+      transform: none;
+      width: 100%;
+      border-bottom: none;
+      box-shadow: none;
+      h1{
+        text-align: right;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+      }
     }
   }
 }
