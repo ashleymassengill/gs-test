@@ -412,6 +412,12 @@ form button {
     .banner .banner-card h2 {
       font-size: 26px;
       line-height: 36px; }
+  @media (max-width: 991px) {
+    .banner .banner-logo {
+      right: 15px; }
+    .banner .banner-card {
+      left: 15px;
+      width: 60%; } }
   @media (max-width: 767px) {
     .banner {
       background-image: none;

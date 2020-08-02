@@ -53,6 +53,15 @@
       line-height: 36px;
     }
   }
+  @media (max-width: $screen-sm-max){
+    .banner-logo{
+      right: 15px;
+    }
+    .banner-card{
+      left: 15px;
+      width: 60%;
+    }
+  }
   @media (max-width: $screen-xs-max){
     background-image: none;
     background-color: $white;
