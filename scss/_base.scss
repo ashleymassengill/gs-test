@@ -38,7 +38,13 @@ form{
     }
     input, textarea{
       width: 100%;
-      border-width: 1px;
+      border-width: 2px;
+      border-color: $blue-1;
+    }
+    input{
+      height: 45px;
+      padding: 0 5px;
+      line-height: 42px;
     }
   }
   .form-row, fieldset{
@@ -68,5 +74,12 @@ form{
   }
   button{
     margin: 8px 0;
+    &.btn-dark{
+      background-color: $blue-1;
+      border-color: $blue-1;
+      &:hover{
+        color: $blue-1;
+      }
+    }
   }
 }

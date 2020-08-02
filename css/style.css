@@ -328,7 +328,12 @@ form .form-item {
     display: block; }
   form .form-item input, form .form-item textarea {
     width: 100%;
-    border-width: 1px; }
+    border-width: 2px;
+    border-color: #00558c; }
+  form .form-item input {
+    height: 45px;
+    padding: 0 5px;
+    line-height: 42px; }
 
 form .form-row, form fieldset {
   border: none;
@@ -354,6 +359,11 @@ form .checkbox {
 
 form button {
   margin: 8px 0; }
+  form button.btn-dark {
+    background-color: #00558c;
+    border-color: #00558c; }
+    form button.btn-dark:hover {
+      color: #00558c; }
 
 .page-content {
   padding-top: 140px; }
