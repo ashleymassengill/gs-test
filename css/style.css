@@ -304,23 +304,32 @@ button, .btn {
   min-width: 160px;
   margin: 0 auto;
   border: solid 2px;
+  text-decoration: none;
   transition: all 0.4s ease-in-out; }
   button.btn-dark, .btn.btn-dark {
     color: #fff;
-    background-color: #000;
-    border-color: #000; }
+    background-color: #00558c;
+    border-color: #00558c; }
     button.btn-dark:hover, .btn.btn-dark:hover {
-      color: #000;
+      color: #00558c;
       background-color: #fff;
-      border-color: #000; }
+      border-color: #00558c; }
   button.btn-light, .btn.btn-light {
-    color: #000;
+    color: #00558c;
     background-color: #fff;
     border-color: #fff; }
     button.btn-light:hover, .btn.btn-light:hover {
       color: #fff;
       background-color: transparent;
       border-color: #fff; }
+  button.btn-light-alt, .btn.btn-light-alt {
+    color: transparent;
+    background-color: #fff;
+    border-color: #fff; }
+    button.btn-light-alt:hover, .btn.btn-light-alt:hover {
+      color: #fff;
+      background-color: #00558c;
+      border-color: #00558c; }
 
 form .form-item {
   padding: 8px 0; }
@@ -499,3 +508,41 @@ form button {
 .form-container h2 {
   font-size: 26px;
   line-height: 36px; }
+
+.accordion-container {
+  padding: 2rem 0 1.5rem; }
+  .accordion-container .accordion {
+    margin: 0.5rem 0; }
+    .accordion-container .accordion .accHead {
+      width: 100%;
+      cursor: pointer;
+      padding: 1.5rem 1rem;
+      color: #55565a;
+      background-color: #e6e6e6;
+      border: solid 1px #e6e6e6;
+      margin: 0;
+      transition: all 0.4s ease-in-out; }
+      .accordion-container .accordion .accHead:hover {
+        background-color: #d9d5d2; }
+      .accordion-container .accordion .accHead:before {
+        content: '+';
+        margin-right: 1.5rem;
+        font-size: 2rem;
+        font-weight: 400;
+        vertical-align: middle;
+        transition: all 0.4s ease-in-out; }
+    .accordion-container .accordion .accContent {
+      display: none;
+      padding: 15px;
+      border: solid 1px #e6e6e6;
+      border-top: none;
+      color: #2d2c2c; }
+      .accordion-container .accordion .accContent p + p {
+        padding-top: 1rem; }
+      .accordion-container .accordion .accContent p:last-of-type {
+        padding-bottom: 1rem; }
+      .accordion-container .accordion .accContent ul {
+        padding-left: 20px; }
+    .accordion-container .accordion.open .accHead:before {
+      transform: rotate(45deg);
+      display: inline-block; }

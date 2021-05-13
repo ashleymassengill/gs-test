@@ -1,0 +1,57 @@
+@mixin transition{
+  transition: all 0.4s ease-in-out;
+}
+
+.accordion-container{
+  padding: 2rem 0 1.5rem;
+  .accordion{
+    margin: 0.5rem 0;
+    .accHead{
+      width: 100%;
+      cursor: pointer;
+      padding: 1.5rem 1rem;
+      color: $shade-50;
+      background-color: $shade-20;
+      border: solid 1px $shade-20;
+      margin: 0;
+      @include transition;
+      &:hover{
+        background-color: $shade-30;
+      }
+      &:before{
+        content: '+';
+        margin-right: 1.5rem;
+        font-size: 2rem;
+        font-weight: 400;
+        vertical-align: middle;
+        @include transition;
+      }
+    }
+    .accContent{
+      display: none;
+      padding: 15px;
+      border: solid 1px $shade-20;
+      border-top: none;
+      color: $shade-70;
+      p{
+        +p{
+          padding-top: 1rem;
+        }
+        &:last-of-type{
+          padding-bottom: 1rem;
+        }
+      }
+      ul{
+        padding-left: 20px;
+      }
+    }
+    &.open{
+      .accHead{
+        &:before{
+          transform: rotate(45deg);
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
