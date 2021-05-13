@@ -3,7 +3,6 @@
 }
 
 .accordion-container{
-  padding: 2rem 0 1.5rem;
   .accordion{
     margin: 0.5rem 0;
     .accHead{
@@ -29,7 +28,7 @@
     }
     .accContent{
       display: none;
-      padding: 15px;
+      padding: 1rem 1rem 1rem 4rem;
       border: solid 1px $shade-20;
       border-top: none;
       color: $shade-70;
@@ -51,6 +50,16 @@
           transform: rotate(45deg);
           display: inline-block;
         }
+      }
+    }
+  }
+  @media (max-width: $screen-xs-max){ //mobile
+    .accordion{
+      .accHead{
+        padding: 1rem;
+      }
+      .accContent{
+        padding: 1rem;
       }
     }
   }

@@ -1,5 +1,6 @@
 //button styling
 button, .btn{
+  display: inline-block;
   font-weight: 700;
   padding: 10px;
   text-align: center;
@@ -29,7 +30,7 @@ button, .btn{
     }
   }
   &.btn-light-alt{
-    color: transparent;
+    color: $shade-40;
     background-color: $white;
     border-color: $white;
     &:hover{

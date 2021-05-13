@@ -298,6 +298,7 @@ a {
     color: #000; }
 
 button, .btn {
+  display: inline-block;
   font-weight: 700;
   padding: 10px;
   text-align: center;
@@ -323,7 +324,7 @@ button, .btn {
       background-color: transparent;
       border-color: #fff; }
   button.btn-light-alt, .btn.btn-light-alt {
-    color: transparent;
+    color: #999999;
     background-color: #fff;
     border-color: #fff; }
     button.btn-light-alt:hover, .btn.btn-light-alt:hover {
@@ -386,7 +387,7 @@ form button {
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
-  margin-bottom: 4rem; }
+  margin-bottom: 3rem; }
   .banner .mobile-bg {
     display: none; }
   .banner .container {
@@ -505,44 +506,115 @@ form button {
           margin-left: 0;
           margin-top: 24px; } }
 
-.form-container h2 {
-  font-size: 26px;
-  line-height: 36px; }
+.form-container {
+  margin-bottom: 4.5rem; }
+  .form-container h2 {
+    font-size: 26px;
+    line-height: 36px; }
+  @media (max-width: 991px) {
+    .form-container {
+      margin-bottom: 3rem; } }
 
-.accordion-container {
-  padding: 2rem 0 1.5rem; }
-  .accordion-container .accordion {
-    margin: 0.5rem 0; }
-    .accordion-container .accordion .accHead {
-      width: 100%;
-      cursor: pointer;
-      padding: 1.5rem 1rem;
-      color: #55565a;
-      background-color: #e6e6e6;
-      border: solid 1px #e6e6e6;
-      margin: 0;
+.cta {
+  background-color: #999999;
+  padding: 3rem 0; }
+  .cta .cta-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+    .cta .cta-container h3 {
+      margin-top: 0;
+      color: #fff; }
+    .cta .cta-container .btn {
+      padding: 10px 2rem; }
+
+.products {
+  background-color: #e6e6e6;
+  padding: 3rem 0; }
+  .products .container .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+  .products .container h3 {
+    margin-top: 0;
+    text-align: center; }
+  .products .container .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #fff;
+    padding: 1rem;
+    max-width: 30%;
+    width: 100%; }
+    .products .container .card img {
+      max-height: 60px;
+      width: auto;
+      height: 100%;
+      margin-bottom: 0.5rem; }
+    .products .container .card a {
+      margin-top: 1.5rem; }
+    .products .container .card + .card {
+      margin-left: 1.5rem; }
+  @media (max-width: 991px) {
+    .products .container .card {
+      max-width: 31.5%; }
+      .products .container .card + .card {
+        margin-left: 1rem; } }
+  @media (max-width: 767px) {
+    .products .container .row {
+      flex-direction: column;
+      align-items: center; }
+    .products .container .card {
+      max-width: 500px;
+      width: 100%; }
+      .products .container .card + .card {
+        margin-left: 0;
+        margin-top: 1.5rem; } }
+
+.accordions {
+  padding: 2rem 0 1rem; }
+
+.accordion-container .accordion {
+  margin: 0.5rem 0; }
+  .accordion-container .accordion .accHead {
+    width: 100%;
+    cursor: pointer;
+    padding: 1.5rem 1rem;
+    color: #55565a;
+    background-color: #e6e6e6;
+    border: solid 1px #e6e6e6;
+    margin: 0;
+    transition: all 0.4s ease-in-out; }
+    .accordion-container .accordion .accHead:hover {
+      background-color: #d9d5d2; }
+    .accordion-container .accordion .accHead:before {
+      content: '+';
+      margin-right: 1.5rem;
+      font-size: 2rem;
+      font-weight: 400;
+      vertical-align: middle;
       transition: all 0.4s ease-in-out; }
-      .accordion-container .accordion .accHead:hover {
-        background-color: #d9d5d2; }
-      .accordion-container .accordion .accHead:before {
-        content: '+';
-        margin-right: 1.5rem;
-        font-size: 2rem;
-        font-weight: 400;
-        vertical-align: middle;
-        transition: all 0.4s ease-in-out; }
-    .accordion-container .accordion .accContent {
-      display: none;
-      padding: 15px;
-      border: solid 1px #e6e6e6;
-      border-top: none;
-      color: #2d2c2c; }
-      .accordion-container .accordion .accContent p + p {
-        padding-top: 1rem; }
-      .accordion-container .accordion .accContent p:last-of-type {
-        padding-bottom: 1rem; }
-      .accordion-container .accordion .accContent ul {
-        padding-left: 20px; }
-    .accordion-container .accordion.open .accHead:before {
-      transform: rotate(45deg);
-      display: inline-block; }
+  .accordion-container .accordion .accContent {
+    display: none;
+    padding: 1rem 1rem 1rem 4rem;
+    border: solid 1px #e6e6e6;
+    border-top: none;
+    color: #2d2c2c; }
+    .accordion-container .accordion .accContent p + p {
+      padding-top: 1rem; }
+    .accordion-container .accordion .accContent p:last-of-type {
+      padding-bottom: 1rem; }
+    .accordion-container .accordion .accContent ul {
+      padding-left: 20px; }
+  .accordion-container .accordion.open .accHead:before {
+    transform: rotate(45deg);
+    display: inline-block; }
+
+@media (max-width: 767px) {
+  .accordion-container .accordion .accHead {
+    padding: 1rem; }
+  .accordion-container .accordion .accContent {
+    padding: 1rem; } }
